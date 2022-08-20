@@ -100,7 +100,8 @@ void * popBack(List * list) {
 }
 
 void * popCurrent(List * list) {
-    return NULL;
+  Node * nodoAux=createNode(list->current->data);
+    return nodoAux->data;
 }
 
 void cleanList(List * list) {
