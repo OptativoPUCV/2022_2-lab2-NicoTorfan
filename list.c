@@ -101,7 +101,7 @@ void * popBack(List * list) {
 
 void * popCurrent(List * list) {
   Node * nodoAux=createNode(list->current->data);
-  Node * curent=createNode(list->current);
+  Node * curent=list->current;
   if(curent==NULL){
     return NULL;
   }
